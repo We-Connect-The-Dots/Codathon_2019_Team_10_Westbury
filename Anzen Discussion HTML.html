@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Here is referencing the Discussion CSS to get the stuff for the header, navbar, and footer-->
+    <link rel="stylesheet" href="Anzen Discussion CSS.css">
+    <!--Here is referencing the Parallax CSS to get the stuff for parallaxes-->
+    <link rel="stylesheet" href="Parallax CSS.css">
+    <!--References the javascript for Parallaxes-->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="Parallax JS.js"></script>
+</head>
+
+<!--HTML for Header-->
+
+<body>
+    <div class="topofpage">
+        <header class="page-header">
+            <h1><img src="./assets/output-onlinepngtools.png" class="ANZEN"> ANZEN </h1>
+        </header>
+        <div class="navbar">
+            <ul class="navbar-container">
+                    <li class="nav-item"><a href="Anzen Homepage HTML.html" class="left-underline nav-button" data-scroll>Home</a></li>
+                    <li class="nav-item"><a href="Anzen Homepage HTML.html#information" class="left-underline nav-button" data-scroll>Information</a></li>
+                    <li class="nav-item"><a href="Anzen Homepage HTML.html#goal" class="left-underline nav-button" data-scroll>Our Goal</a></li>
+                    <li class="nav-item"><a href="Anzen Homepage HTML.html#impact" class="left-underline nav-button" data-scroll>Impact</a></li>
+                    <li class="nav-item"><a href="Anzen Discussion HTML.html" target="_self" class="left-underline nav-button"
+                            data-scroll>Discussion</a></li>
+                    <li class="nav-item"><a href="Anzen About Us HTML.html" target="_self" class="left-underline nav-button"
+                            data-scroll>About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--End HTML for Header-->
+
+    <!--Specific to Discussions Page-->
+    <h2>Discussion</h2>
+    <p class="firstparagraph">Welcome to our discussion page. <br> Here is a place to discuss the environmental
+        problems created by nonrenewable resources. <br>Please feel free to talk about the future of renewable energy,
+        <br> especially after reading our brief summaries on our home page. <br> Lastly, this is a froum for discussion
+        on general environmental impacts.</p>
+    <div class="parallax p1" id="section-1"></div>
+    <h3>Comments</h3>
+
+    <div id="comments"></div>
+    <hr />
+
+    <form id="addcomment" action="#">
+        <h3>Add your thoughts!</h3>
+        <label>Name: <br><input type="text" id="name" /></label><br>
+        <label>Comment: <br><textarea id="comment" rows="10" cols="50"></textarea></label><br>
+        <input type="submit" id="post" value="Post"/>
+
+    </form>
+    <script type="text/javascript" src="Anzen Discussion JS.js" defer></script>
+
+    <!--Footer HTML stuff-->
+    <footer>
+        <div class="row" id="section-4">
+            <div class="col-3" id="other-foot-stuff">
+                <p>Anzen <br>Email: anzen@gmail.com
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Group 10 at the Westurby Code-A-Thon, All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+<hr />
+
+</html>
